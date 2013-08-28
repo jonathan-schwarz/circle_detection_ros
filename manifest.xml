@@ -1,0 +1,16 @@
+<package>
+  <description brief="circle_detection">
+
+     circle_detection
+
+  </description>
+  <author>Jonathan Schwarz</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/circle_detection</url>
+  <depend package="roscpp"/>
+  <depend package="opencv2"/>
+
+</package>
+
+
