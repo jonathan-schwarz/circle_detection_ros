@@ -105,7 +105,6 @@ struct Circle{
 			}
 			DoubleMatrix::pseudo_inverse(Ji,J);
 			Matrix<double> h = Ji*(f*(-1.0));
-			std::cout<<x<<"\n";
 			x+=h;
 			double new_norm = (f.transpose()*f).at(0,0);
 			delta_norm = fabs(norm-new_norm);

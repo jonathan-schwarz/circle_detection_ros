@@ -14,6 +14,13 @@
 #include <cassert>
 #include <cstdlib>
 #include <cstdio>
+#include <csignal>
+
+void signalHandler(int signum)
+{
+    exit(signum);
+}
+
 
 int lowThreshold = 25;
 int houghThreshold = 50;

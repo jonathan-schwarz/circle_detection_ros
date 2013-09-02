@@ -95,7 +95,6 @@ void ransac(std::vector<Circle>& sink, std::vector<Point>& points, double eps, s
     size_t i=maxCircles;
 	while(i--){
 		Circle c = ransac_1(points,eps,nbModels,supporters);
-        std::cout << c.center.x << "\t" << c.center.y << "\t" << c.radius << "\n";
 		if(supporters>=min_supporters){
 			std::vector<Point> supporters;
 //			get_supporters(supporters, c, points, eps);
